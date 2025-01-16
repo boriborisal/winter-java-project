@@ -5,7 +5,7 @@ package winterProject2;
 public class 예제2_2 {
     public static void main(String[] args) {
         int A[] = {4,3,6,7,8,3,4,5,3,4,1};
-        int[] count = new int[9];//
+        int[] count = new int[9];//1~8까지 숫자가 들어갈 배열 만들기기
 
         for (int num : A) {
             count[num]++;
