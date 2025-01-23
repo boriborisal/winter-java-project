@@ -2,6 +2,11 @@
 // 2차원 배열을 만드는 부분은 함수로 만드시오.
 
 //이거너무어려워서 2차원배열에대한공부 쫌 했습니다ㅠㅠㅠ 근데여전히모르겠어요 
+//진짜모르겠어서 계속 참고자료 찾았습니다
+//참고자료
+//https://keichee.tistory.com/423
+//https://kadosholy.tistory.com/87
+//https://hianna.tistory.com/511
 package winterProject2;
 
 public class 예제2_3 {
@@ -31,13 +36,15 @@ public class 예제2_3 {
     public static int[][] makeIt2D(int[] array, int eachList) {//함수만들기 
         int[][] result = new int[(array.length + eachList - 1) / eachList][];//3차수정-행크기 계산하는 코드 추가
 
-        for (int i = 0; i < 10; i++) {
+        int i = 0;
+        while (i * eachList < array.length) {
             int start = i * eachList;
             int end = Math.min(array.length, start + eachList);
-
             result[i] = new int[end - start];
             System.arraycopy(array, start, result[i], 0, end - start);
+            i++;
         }
+
         return result;
     }
 }
