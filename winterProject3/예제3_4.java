@@ -11,14 +11,15 @@
 //수정-replace 함수찾음 
 package winterProject3;
 
-public class 예제3_4실패 { 
+public class 예제3_4 { 
     public static void main(String[] args) {
         String str = "Hello World";
-        String result = myreplace(str, "World", "Kim");//왜 인식을몬하나요?
+        String result = myreplace(str, "World", "Kim");//string 메서드 replace 
         System.out.println(result);
     }
     public static String myreplace(String str, String target, String replacement) {//먼저 만들어두기
-        return str.replace(target, replacement);
+        return str.replace(target, replacement);   
+         
     }
 
 }
