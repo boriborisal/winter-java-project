@@ -16,8 +16,8 @@ public class 예제2_1수정 {
         //다른 구현 방식을 참고해보려고 했는데 이해가 안가서 좀..귀찮은 방식이지만 전부 for문 사용햇습니다ㅜㅜㅜ
         System.out.print("array 1: ");
         for (int i = 0; i < FA.length; i++) {
-            System.out.print(FA[i]);//
-            if (i < FA.length - 1) {
+            System.out.print(FA[i]);
+            if (i < FA.length - 1) {//마지막에 콤마안찍히게하려고 추가했습니다다
                 System.out.print(",");
             }
         }

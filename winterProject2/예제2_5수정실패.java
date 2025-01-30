@@ -15,7 +15,7 @@ public class 예제2_5수정실패 {
 
         System.out.print("array 1: ");
         for (int i = 0; i < FA.length; i++) {
-            System.out.print(FA[i]);//
+            System.out.print(FA[i]);
             if (i < FA.length - 1) {
                 System.out.print(",");
             }
